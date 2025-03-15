@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-prompt-manager"
+version = "1.0.0"
+description = "MCP提示词管理服务"
+readme = "README.md"
+authors = [{name = "Chengfeng", email = "chengfeng@example.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcp>=1.4.0",
+    "requests>=2.28.0",
+    "urllib3>=1.26.0",
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+mcp-prompt-manager = "mcp_prompt_manager.mcp_server:main"
+
+[project.urls]
+"Homepage" = "https://github.com/Ceeon/mcp-prompt-manager"
+"Bug Tracker" = "https://github.com/Ceeon/mcp-prompt-manager/issues"
